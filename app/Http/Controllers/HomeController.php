@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
-    {
+    // public function index()
+    // {
     // {
     //     $data = [
     //         'nama' => 'Doraemon',
@@ -16,13 +16,19 @@ class HomeController extends Controller
 
     //     return view('home')->with($data);
     // }
-    $nama = "Nobita";
-    $pekerjaan = "Student";
-    return view('home', compact('nama','pekerjaan'));
+    // $nama = "Nobita";
+    // $pekerjaan = "Student";
+    // return view('home', compact('nama','pekerjaan'));
+    // }
+
+    public function home(){
+        return view('/');
     }
 
-    public function contact()
-    {
-        return view('contact');
-    }
+    // public function contact()
+    // {
+    //     return view('contact');
+    // }
+
+    
 }
